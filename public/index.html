@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cake It Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        body {
+            width: 100% !important;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-size: 1em;
+        }
+
+        .gallery {
+            max-width: 900px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 24px 0;
+        }
+
+        .row {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .imgWrapper {
+            flex-basis: calc((100% / 2) - 16px);
+            height: 425px;
+            background-color: black;
+            align-items: center;
+            display: flex;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 777px) {
+            .gallery {
+                width: 100%;
+            }
+
+            .row {
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+
+            .imgWrapper {
+                flex-basis: calc((100% / 2) - 8px);
+                height: 375px;
+            }
+        }
+
+        @media screen and (max-width: 478px) {
+            .imgWrapper {
+                height: 225px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="row">
+            <div class="imgWrapper"><img src="assets/red.jpeg" /></div>
+            <div class="imgWrapper"><img src="assets/red_cake.jpeg" /></div>
+        </div>
+        <div class="row">
+            <div class="imgWrapper"><img src="assets/taylor.jpeg" /></div>
+            <div class="imgWrapper"><img src="assets/taylor_cake.jpeg" /></div>
+        </div>
+        <div class="row">
+            <div class="imgWrapper"><img src="assets/lover.jpeg" /></div>
+            <div class="imgWrapper"><img src="assets/lover_cake.jpeg" /></div>
+        </div>
+        <div class="row">
+            <div class="imgWrapper"><img src="assets/speak_now.jpeg" /></div>
+            <div class="imgWrapper"><img src="assets/speak_now_cake.jpeg" /></div>
+        </div>
+        <div class="row">
+            <div class="imgWrapper"><img src="assets/fearless.jpeg" /></div>
+            <div class="imgWrapper"><img src="assets/fearless_cake.jpeg" /></div>
+        </div>
+        <div class="row">
+            <div class="imgWrapper"><img src="assets/reputation.jpeg" /></div>
+            <div class="imgWrapper"><img src="assets/reputation_cake.jpeg" /></div>
+        </div>
+    </div>
+</body>
+
+</html>
